@@ -9,7 +9,10 @@
 - É importante poder consultar todas as matrículas confirmadas referentes a estudante X de forma rápida.
 
 - O cliente gostaria de poder consultar as turmas abertas por intervalo de data, para não receber informações desnecessárias (como turmas antigas).
+  CursoController.js(pegaCursos), Services.js(pegaTodosOsRegistros) e cursosRoute.js(pegaCursos)
 
-- O cliente quer poder consultar as matrículas por turma e saber quais delas estão lotadas, para organizar melhor as matrículas.
+- O cliente quer poder consultar as matrículas por curso e saber quais delas estão lotadas, para organizar melhor as matrículas.
+  MatriculaController.js(pegaCursosLotados), pessoasRoute.js(.get("/pessoas/matriculas/lotadas")) e Services.js(pegaEContaRegistros)
 
 - O cliente gostaria que, uma vez que o cadastro de um estudante fosse desativado, todas as matrículas relativas a este estudante automaticamente passassem a constar como “canceladas”.
+  PessoaController.js(cancelaRegistroEstudante), PessoaServices.js(cancelaPessoaEMatriculas) e pessoasRoute.js(/pessoas/:estudante_id/cancela)
